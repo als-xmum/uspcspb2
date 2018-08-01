@@ -1,0 +1,126 @@
+.full-width {
+  width: 100%;
+}
+.center-text {
+  text-align: center;
+}
+@keyframes welcome-brand {
+  0% {
+    transform: translateX(-200%);
+  }
+}
+@keyframes welcome-company {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+#brand-name {
+  font-variant: small-caps;
+  color: #555;
+  animation: welcome-brand 1.5s cubic-bezier(0.39, 0.58, 0.55, 1) forwards;
+  text-shadow: 3px 3px 10px black;
+}
+#brand-name::after {
+  display: block;
+  width: 50%;
+  border-bottom: solid 1px #ddd;
+  content: " ";
+  margin: 0 auto;
+}
+
+#company-name {
+  color: #999;
+  animation: welcome-company 0.3s ease-in 1.5s forwards;
+  opacity: 0;
+}
+
+#model {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  box-shadow: orangered 0 -3px 20px 0px;
+  color: white;
+  background-color: orangered;
+  padding: 0.1em 0;
+}
+
+#model .param {
+  margin: 0.9em 2em;
+  display: flex;
+  align-items: center;
+}
+
+#model .param .name {
+  width: 25%;
+}
+
+#model ul {
+  display: flex;
+  width: 75%;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+}
+
+#model ul.colors li {
+  border-radius: 50%;
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  box-shadow: 0 0 13px 2px yellow;
+  display: block;
+}
+
+#model ul.colors li:nth-child(1) {
+  background-color: red;
+}
+
+#model ul.colors li:nth-child(2) {
+  background-color: #48a3e9;
+}
+
+#model ul.colors li:nth-child(3) {
+  background-color: white;
+}
+
+#model ul.colors li:nth-child(4) {
+  background-color: yellowgreen;
+}
+
+#model ul.colors li:nth-child(5) {
+  background-color: black;
+}
+#model ul li {
+  font-size: smaller;
+  margin-left: 1em;
+  text-align: center;
+}
+
+#contact {
+  box-shadow: #444 0 -3px 20px 0px;
+  background-color: #444;
+  padding: 1em 0 1.5em;
+}
+
+#contact .info {
+  display: inline-block;
+  margin-left: .6em;
+  color: white;
+}
+
+#contact .info p, #contact .info address {
+    display: inline-block;
+    margin-left: 0.3em;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: smaller;
+    vertical-align: middle;
+}
+
+#contact .info address {
+  width: 85vw;
+}
+
+#contact .info i {
+  vertical-align: middle;
+}
