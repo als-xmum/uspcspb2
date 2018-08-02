@@ -13,7 +13,7 @@
     transform: translateX(-100%);
   }
 }
-@keyframes welcome-company {
+@keyframes fade-show {
   0% {
     opacity: 0;
   }
@@ -37,7 +37,7 @@
 
 #company-name {
   color: #999;
-  animation: welcome-company .3s ease-in .8s forwards;
+  animation: fade-show .3s ease-in .8s forwards;
   opacity: 0;
 }
 
@@ -125,6 +125,10 @@
   display: block;
 }
 
+#model ul.colors li.selected {
+  animation: fade-show 1s infinite ease-out alternate-reverse;
+}
+
 #model ul.colors li:nth-child(1) {
   background-color: red;
 }
@@ -148,6 +152,12 @@
   font-size: smaller;
   margin-left: 1em;
   text-align: center;
+  padding: 0.3em;
+  cursor: pointer;
+}
+#model ul li.selected {
+  background: #c00;
+  border-radius: 10px;
 }
 #model .order {
   display: flex;
