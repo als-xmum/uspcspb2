@@ -33,6 +33,7 @@
     if (capacity === null) {
       return alert('Please select the capacity that meets your requirement.')
     }
-    alert(`You've ordered a USPC Solar Power Bank with color ${color} and capacity ${capacity}!`)
+    alert(`You've ordered a USPC Solar Power Bank with color ${color} and capacity ${capacity}.
+Please contact us for your present!`)
   })
 })(window)
